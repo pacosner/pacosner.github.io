@@ -1,10 +1,430 @@
+
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>Patrick Cosner</title>
+<!-- saved from url=(0068)http://patrickcosner.com/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+<script type="text/javascript" async="" src="./Patrick Cosner_files/ga.js"></script><script type="text/javascript" src="./Patrick Cosner_files/analytics.js"></script>
+
+    
+	<meta name="keywords" content="Patrick, Cosner, Patrick Cosner"> 
+	<meta name="description" content="Personal website and resume of Patrick Cosner."> 
+    <title>Patrick Cosner</title>
+	<link rel="stylesheet" href="stylesheet.css" type="text/css" media="all">
+	<script type="text/javascript" src="./Patrick Cosner_files/jquery.min.js"></script><style type="text/css"></style> 	
+	<script type="text/javascript">  
+	$(document).ready(function()
+	{
+	var year = new Date();
+	var currentYear = year.getFullYear();
+	var yearsExp = currentYear - 2001;
+	$("#yearsExpSpan").html(yearsExp);
+	
+		// Hide all the tooltips
+		$("#jquery li").each(function() {
+			$("a strong", this).css("opacity", "0");
+		});
+		
+		$("#jquery li").hover(function() { // Mouse over
+			$(this)
+				.stop().fadeTo(500, 1)
+				.siblings().stop().fadeTo(500, 0.2);
+				
+			$("a strong", this)
+				.stop()
+				.animate({
+					opacity: 1,
+					top: "-10px"
+				}, 300);
+			
+		}, function() { // Mouse out
+			$(this)
+				.stop().fadeTo(500, 1)
+				.siblings().stop().fadeTo(500, 1);
+				
+			$("a strong", this)
+				.stop()
+				.animate({
+					opacity: 0,
+					top: "-1px"
+				}, 300);
+		});
+		
+	});	  
+
+	</script>
+
+	 
 </head>
+
 <body>
-  BRB
-</body>
-</html>
+
+
+
+<script type="text/javascript" src="./Patrick Cosner_files/disclaim-element.js"></script>
+<script type="text/javascript" src="./Patrick Cosner_files/graph-calc.js"></script>
+<script type="text/javascript" src="./Patrick Cosner_files/jquery.min(1).js"></script>
+<script type="text/javascript">
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://patrickcosner.com/";
+
+var firstYear = 1996;
+var imgWidth = 475,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "18";
+var displayMonth = "May";
+var displayYear = "2014";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {fx
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();
+</script>
+
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+
+
+
+	<div id="page-wrap">
+    
+        <img src="./Patrick Cosner_files/patrick26.jpg" alt="Photo of Patrick" id="pic">
+    
+        <div id="contact-info" class="vcard">
+        
+            <!-- Microformats! -->
+        
+            <h1 class="fn">Patrick Cosner</h1>
+			<h2 class="fn">Senior Principal Full Stack Developer</h2>
+			<h2 style="font-size: 16px" class="fn">Agile Certified Practitioner</h2>
+			<h2 style="font-size: 16px" class="fn">Professional Scrum Master</h2>
+
+            <p id="abovelinks">
+				Redondo Beach, CA<br>
+				Email: 				
+        <script type="text/javascript">
+        <!-- Begin
+        user = "cosner";
+        domain = "gmail.com";
+        document.write('<a href=\"mailto:' + user + '@' + domain + '\">' + 
+        			user + '@' + domain + '</a>');
+        // End -->
+        </script>				
+				<br/>			
+			</p>			
+			
+        </div>
+                
+        <div id="objective">
+            <span id="yearsExpSpan"></span> years experience in enterprise programming, web development and design. Hands-on developer who is passionate in learning and adopting standards-compliant web technologies and next generation solutions with Agile methodologies. Currently specializing in <a href="https://angular.io/">Angular</a>, Grails and jQuery.
+            </p>
+        </div>
+		
+		
+        
+        <div class="clear"></div>
+        
+		<div class="social-icons">
+  <ul>
+<li class="linkedin" style="background-color: #f0f0f0">
+<a href="http://www.linkedin.com/pub/patrick-cosner/0/380/758" target="_blank">LinkedIN</a>
+</li>
+</div>
+
+ <div class="clear"></div>
+		
+        <dl>
+            <dd class="clear"></dd>
+			
+            
+			
+			            <dd class="clear"></dd>
+			
+            <dt>Project Experience</dt>
+            
+
+			<dd>
+				<p><strong>Senior Principal Full Stack Developer<br>Northrop Grumman, October 2019-Present</strong></p>
+	        <p>
+          </p>
+            </dd>
+
+			<dd>
+				<p><strong>Associate Software Engineer, Defense Intelligence Agency<br>Booz Allen Hamilton, March 2017-October 2019</strong></p>
+	        <p>
+	        Worked as the Lead Developer on BAH's Threat Library project. Based on customer feedback, implemented and tested rich UI features using Angular 2, including custom data visualization components and CRUD modules, and oversaw the project's development efforts to IOC.
+          </p>
+            </dd>
+
+
+
+			<dd>
+				<p><strong>Associate Software Engineer, National Ground Intelligence Agency<br>Booz Allen Hamilton, November 2016-March 2017</strong></p>
+	        <p>
+Worked on an Agile Team tasked with developing and enhancing NGIC’s Digital Production (DPP) application.  Based on customer feedback, implemented and tested rich UI features using Angular 2, including custom data visualization components and CRUD modules, allowing NGIC Customer to more effectively manage Digital Production.  Also contributed to back-end components of the system, developing and maintaining RESTful web services using Java.
+</p>
+            </dd>
+
+            
+			
+			<dd>
+				<p><strong>Associate Software Engineer, Defense Intelligence Agency<br>Booz Allen Hamilton, November 2015-November 2016</strong></p>
+	        <p>
+Worked onsite at DIA on the Requirements, Test, and Database Technical Support task order.  Worked on an Agile team developing, testing, and maintaining the ST Portal using AngularJS and SharePoint.  Largely contributed to the end-to-end development of ART, the Activity Reporting Tool, which is used daily throughout the directorate to record, transfer, measure, and export significant activities.  Based on team’s outstanding efforts, BAH received a letter of a commendation from the Contracting Office.
+</p>
+            </dd>
+      
+
+			<dd>
+				<p><strong>Software Developer 3, US Army National Ground Intelligence Center<br>CACI, November 2012-November 2015</strong></p>
+	        <p>
+			Led a team of Software Engineers in a mission-critical project for the National Ground Intelligence Center. Worked with Customer to design a web-based solution for managing business processes. Performed requirements analysis, designed, implemented and tested solutions using computer engineering, web design and development techniques. Managed development sprints and led customer feedback sessions, which required clear and robust oral communication (sensitive, controversial, and technical). Debugged and tested applications for optimal operation.
+</p>
+<p>
+Worked on-site at NGIC to enhance, develop and deploy a web-based solution for Request for Information, consulting with technical specialists and resolving system integration and implementation issues. Worked with the customer, development team, and users to identify problems and implement solutions to meet their needs.
+</p>
+<p>
+Based on exemplary job performance, was selected for and completed the <b>CACI Emerging Leaders Program</b>. This program involves a mentoring program and seminars presented by company leadership. It is specifically designed for employees who exhibit strong desire and potential to take on additional leadership responsibilities.
+</p>
+            </dd>
+
+            <dd>
+				<p><strong>Cyber Software Engineer, US Treasury GSOC<br>Northrop Grumman, June 2012-November 2012</strong></p>
+				<p>Worked in Web Development for the U.S. Treasury GSOC handling Cyber Security and APT. 
+				Architected end to end designs for multiple websites analyzing massive databases and logs to provide real-time analytics 
+				for security analysts and robust reporting sites and portals various levels of management. 
+				Systems were deployed on diverse platforms and optimized for efficiency and performance while maintaining an SLA and 
+				supporting a 24/7 operations team.  
+				Worked with real-time threat and malware tools as well as tools to analyze and produce reports on data.</p>
+				<p>Technologies used: PHP, Apache, MySQL, HTML/CSS, jQuery, JavaScript.</p>
+            </dd>
+
+            <dd>
+				<p><strong>Senior Software Engineer, SBA<br>REI Systems, August 2011-June 2012</strong></p>
+				<p>Participated as a member of a team tasked with maintaining and enhancing Drupal-based SBA.gov website. Received requirements from Business Analysts for new features and bug fixes, and worked with Quality Assurance Testers to ensure solutions were deployed accurately. Provided recommendations for enhancing security and performance. </p>
+				<p>Technologies used: PHP, MySQL, HTML/CSS, jQuery, JavaScript.</p>
+            </dd>			
+
+            <dd>
+				<p><strong>Lead Developer, i-agent.com<br>Accella, June 2009-August 2009</strong></p>
+				<p>Led development efforts for new features to the Ruby on Rails-based site, including the ability to search on a graphical map, and perform a custom search based on user inputs. Deployed and customized a Wordpress blog which was integrated seamlessly with the rest of the site.  Accepted requirements from project manager, and performed regression testing of application for every new build released.</p>            
+			</dd>
+
+			 <dd>
+				<p><strong>Lead Developer, tbhse.com<br>Accella, March 2008-March 2009</strong></p>
+				<p>
+				As lead developer, was responsible for end-to-end implementation of the DRODio real estate search engine. Tasks include designing the database schema, developing back-end scripts to import data from homes database, complete front-end web development based on provided wireframes, and development of backend business logic to process searches based on user input. Monitored bug reports and feature requests from the client over a one-year period to enhance and perfect the site. 
+				</p>
+				<p>
+				Technologies used: PHP, MySQL, HTML/CSS, Prototype/Scriptaculous, JavaScript.
+				</p>
+			</dd>
+
+			 <dd>
+				<p><strong>Developer, XM<br>Accella, Janurary 2008-March 2008</strong></p>
+				<p>
+				Participated as a member of a team tasked with developing a new programming guide for XM Radio, which included the ability to save favorite programs and scroll through the entire XM programming schedule. The application was developed in HTML/CSS and Javascript, heavily reliant on AJAX to pull data from the backend Java servlets. Wrote 60% of the code, and collaborated with XM's in-house graphic designer to ensure compliance with the rest of XM's online presence.    				
+				</p>
+			</dd>			
+
+			 <dd>
+				<p><strong>Senior Programmer, World Adult Kickball Association<br>December, 2003-May, 2006</strong></p>
+				<p>
+				Developed and maintained online shopping cart and registration system using Verisign transactions, culminating in over 55,000 registrations nationwide.  Directly collaborated with company founders on all aspects of information technology in the company as it quadrupled in size. Maintained corporate website and performed basic content management. 				
+				</p>
+				<p>
+				Technologies used: PHP, MySQL, Apache, Red Hat Enterprise Linux, Perl, JavaScript, HTML/ CSS, Adobe Photoshop				
+				</p>
+			</dd>	
+
+						 <dd>
+				<p><strong>Web Developer, United States Postal Service<br>JMCS, April, 2002-October, 2003</strong></p>
+				<p>
+				Developed and maintained large internal portal site for the Postal Service. Interacted with USPS clients and met requests for changes to the site using web-based content management system. Performed regression testing upon each deployment to production. 				</p>
+				<p>
+				Technologies used: HTML w/ CSS, Javascript, Macromedia Fireworks
+				</p>
+			</dd>	
+			
+            
+            <dd class="clear"></dd>
+			
+			
+			            <dt>Technical Skills</dt>
+            <dd>
+                <p>PHP, MySQL, Apache, jQuery, JavaScript, Ruby on Rails, Wordpress, Perl, HTML, CSS, Adobe Photoshop, Ubuntu Linux, Solaris, Microsoft Windows</p>
+            </dd>
+            <dd class="clear"></dd>
+            
+            <dt>Work History</dt>
+            <dd>
+		
+			            <h2><a href="https://northropgrumman.com/" target="_blank">NORTHROP GRUMMAN</a><span>Sr. Principal Full Stack Developer - 2019-present</span></h2>
+			
+				<h2><a href="https://boozallen.com/" target="_blank">BOOZ ALLEN HAMILTON</a><span>Associate Software Engineer - 2015-2019</span></h2>			
+			
+	            <h2><a href="https://caci.com/" target="_blank">CACI</a><span>Software Developer - 2012-2015</span></h2>			
+				
+	            <h2><a href="https://northropgrumman.com/" target="_blank">NORTHROP GRUMMAN</a><span>Cyber Software Engineer - 2012</span></h2>
+			
+	            <h2><a href="https://reisys.com/" target="_blank">REI SYSTEMS, INC.</a><span>Senior Software Engineer - 2011-2012</span></h2>
+				
+				<h2><a href="https://accella.net/" target="_blank">ACCELLA, LLC</a><span>Senior Web Developer - 2006-2009</span></h2>
+				
+				<h2><a href="https://kickball.com/" target="_blank">WAKA</a><span>Senior Programmer - 2003-2006</span></h2>
+				
+				<h2><a href="https://crgt.com/" target="_blank">JOHNSTON MCLAMB</a><span>Web Developer - 2002-2003</span></h2>
+            </dd>
+
+            <dd class="clear"></dd>
+            
+            <dt>Certifications</dt>
+            
+            <dd>
+				<p><strong><a href="https://www.youracclaim.com/badges/dbee39d2-e9aa-4d10-9abd-631b7af437b8/">PMI - Agile Certified Practitioner</a></strong></p>
+            </dd>	
+            
+            <dd>
+				<p><strong><a href="https://certification.comptia.org/certifications/security">CompTIA Security+</a></strong></p>
+            </dd>	
+			<dd>
+				<p><strong><a href="https://www.scrum.org/professional-scrum-certifications/professional-scrum-master-i-assessment">Professional Scrum Master level I (PSM I)</a></strong></p>
+            </dd>			
+			
+            
+            <dd class="clear"></dd>
+		
+            <dt>Education</dt>
+            
+            <dd>
+                <a target="_blank" href="https://vt.edu"><h2>VIRGINIA TECH, Pamplin College of Business</a></h2>
+              				<p><strong>Blacksburg, Virginia</strong></p>
+				<strong>Master of Information Technology</strong><br></p>
+				                <p>Expected to Graduate in 2022<br>
+            </dd>
+            
+            <dd class="clear"></dd>
+
+            
+            <dd>
+                <a target="_blank" href="https://www.virginia.edu"><h2>UNIVERSITY OF VIRGINIA, School of Engineering and Applied Science</a></h2>
+				<p><strong>Charlottesville, Virginia</strong></p>
+				<strong>Bachelor of Science, Computer Science</strong><br></p>
+				                <p><strong>Class: </strong>2001<br>
+            </dd>
+            
+            <dd class="clear"></dd>
+			
+            
+            <dt>References</dt>
+            <dd>Available on request</dd>
+            
+            <dd class="clear"></dd>
+        </dl>
+        
+        <div class="clear"></div>
+
+		
+		<div style="float: right; display: none;" id="html5">
+			<a href="http://validator.w3.org/check?uri=http%3A%2F%2Fpatrickcosner.com%2F">
+			<img src="./Patrick Cosner_files/html5-badge-h-css3-semantics.png" width="165" height="64" alt="HTML5 Powered with CSS3 / Styling, and Semantics" title="HTML5 Powered with CSS3 / Styling, and Semantics">
+			</a>
+		</div>
+
+		
+    </div><!-- end page-wrap -->
+
+
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 15:57:42 May 18, 2014 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 15:35:22 Nov 15, 2014.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+
+
+
+
+</body></html>
